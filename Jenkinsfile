@@ -1,39 +1,17 @@
 pipeline
 {
-agent any
+	agent any
 
-stages
-{
-stage('yo')
-{
-	steps{
-	echo "hello"
+	stages
+	{
+		stage('Build')
+		{
+				steps
+				{
+					cd\
+					cd ISA\isa\DevUI
+					npm run ng build --prod --aot
+				}
+		}
 	}
-}
-
-
-stage ('Build')
-{
-
-	steps {
-
-
-		echo "In build stage"
-	}
-}
-
-
-stage ('deploy')
-{
-
-	steps {
-
-
-		echo "in Deploy phase"
-	}
-}
-
-
-}
-
 }
