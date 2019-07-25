@@ -1,3 +1,5 @@
+def workspace;
+
 pipeline
 {
 	agent any
@@ -6,10 +8,7 @@ pipeline
 	{
 		stage('Build')
 		{
-				steps
-				{
-					sh 'dir'
-				}
+			workspace=pwd()
 		}
 	}
 }
