@@ -8,7 +8,9 @@ pipeline
 	{
 		stage('Build')
 		{
-			workspace=pwd()
+			steps{
+				workspace=pwd()
+			}
 		}
 	}
 }
