@@ -6,7 +6,9 @@ stages
 {
 stage('yo')
 {
+	steps{
 	echo "hello"
+	}
 }
 
 }
