@@ -8,9 +8,8 @@ pipeline
 		{
 				steps
 				{
-					cd\
-					cd ISA\isa\DevUI
-					npm run ng build --prod --aot
+					"cmd /c mvn".execute()
+					print "cmd /c mvn".execute().text
 				}
 		}
 	}
