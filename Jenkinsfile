@@ -6,12 +6,16 @@ pipeline
 
 	stages
 	{
-		 stage('build') {
-            steps {
-				dir('C:\\ISA\\isa\\DevUI') {
-                sh 'npm run ng build --prod --aot'
-            }
-        }
+		 stage('build') 
+		 {
+            steps 
+			{
+				dir('C:\\ISA\\isa\\DevUI') 
+				{
+                	sh 'npm run ng build --prod --aot'
+            	}
+        	}
+		}
 	}
 }
 
