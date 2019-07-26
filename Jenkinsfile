@@ -12,7 +12,8 @@ pipeline
 			{
 				dir('C:\\ISA\\isa\\DevUI') 
 				{
-                	sh 'npm run ng build --prod --aot'
+					echo 'hi'
+                	// sh 'npm run ng build --prod --aot'
             	}
         	}
 		}
