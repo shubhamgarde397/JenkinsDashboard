@@ -10,6 +10,8 @@ pipeline
 		 {
             steps 
 			{
+				sh label: '', script: 'cd\\'
+				sh label: '', script: 'cd Projects\\NRCM'
 				dir('C:\\Projects\\NRCM\\') 
 				{
 					echo 'hi'
