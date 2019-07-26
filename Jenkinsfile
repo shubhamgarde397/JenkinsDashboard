@@ -10,10 +10,10 @@ pipeline
 		 {
             steps 
 			{
-				dir('C:\\ISA\\isa\\DevUI') 
+				dir('C:\\Projects\\NRCM\\') 
 				{
 					echo 'hi'
-                	// sh 'npm run ng build --prod --aot'
+                	sh 'npm run ng build --prod --aot'
             	}
         	}
 		}
