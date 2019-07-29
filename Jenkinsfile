@@ -14,6 +14,7 @@ pipeline
 			// bat 'xcopy C:\\PYTHON C:\\Projects /O /X /E /H /K'
 			bat label: '', script: 'cd\\'
 			bat label: '', script: 'cd C:\\ISA\\isa\\nextGen'
+			bat label: '', script: 'cd'
 			// bat 'npm run ng build --prod --aot'
         	}
 		}
