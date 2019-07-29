@@ -52,8 +52,7 @@ pipeline
 				{
 					bat 'del index-nextGen-old.html'
 					bat 'ren index-nextgen.html index-nextgen-old.html'
-					bat 'C:\\Users\\shubham.nitin.garde\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe
-					C:\\Deployment\\file.py nextGen'
+					bat 'file.py nextGen'
 					bat 'ren index-2-nextGen.html index-nextGen.html'
 				}
 				dir('C:\\ISA\\isa\\nextGen')
