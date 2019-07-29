@@ -9,7 +9,10 @@ pipeline
 		stage('Preparation'){
 
 			steps{
+				dir('C:\\Deployment')
+				{
 				bat 'C:\\Users\\shubham.nitin.garde\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe C:\\Deployment\\file.py nextGen'
+				}
 			}
 		}
 
