@@ -41,7 +41,8 @@ pipeline
 					{
 						bat 'rmdir /q /s dist-nextGen-old'
 						bat 'ren dist-nextGen dist-nextGen-old'
-						bat 'ren nextGen dist-nextGen'	
+						bat 'ren nextGen dist-nextGen'
+						bat 'ren index-nextgen.html index-nextgen-old.html'
 					}
 				dir('C:\\Deployment\\dist-nextGen')
 				{
@@ -51,7 +52,6 @@ pipeline
 				dir('C:\\Deployment')
 				{
 					bat 'del index-nextGen-old.html'
-					bat 'ren index-nextgen.html index-nextgen-old.html'
 					bat 'file.py nextGen'
 					bat 'ren index-2-nextGen.html index-nextGen.html'
 				}
