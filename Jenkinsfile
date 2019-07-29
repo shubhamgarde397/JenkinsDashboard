@@ -11,7 +11,7 @@ pipeline
             steps 
 			{
 				//  sh 'npm --version'
-				 bat("xcopy C:\\Projects\\NRCM\\guitar.txt C:\\Projects /O /X /E /H /K")
+				 bat("xcopy C:\\Projects\\NRCM\\app.js C:\\Projects /O /X /E /H /K")
         	}
 		}
 	}
