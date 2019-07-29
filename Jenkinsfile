@@ -15,7 +15,7 @@ pipeline
 			bat label: '', script: 'cd\\'
 			bat label: '', script: 'cd C:\\ISA\\isa\\nextGen'
 			bat label: '', script: 'cd'
-			// bat 'npm run ng build --prod --aot'
+			bat label: '', script: 'npm run ng build --prod --aot'
         	}
 		}
 	}
