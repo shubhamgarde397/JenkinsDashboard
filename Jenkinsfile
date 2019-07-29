@@ -36,7 +36,7 @@ pipeline
 		{
 			steps{
 			bat 'xcopy C:\\ISA\\isa\\nextGen\\dist C:\\Deployment /O /X /E /H /K'
-			dir('C:\\ISA\\isa\\nextGen') 
+			dir('C:\\Deployment') 
 				{
 					bat 'rmdir /q /s dist-nextGen-old'
 					bat 'ren dist-nextGen dist-nextGen-old'
