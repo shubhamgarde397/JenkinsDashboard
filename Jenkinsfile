@@ -11,7 +11,7 @@ pipeline
             steps 
 			{
 				//  sh 'npm --version'
-				 bat("xcopy C:\\PYTHON C:\\Projects /O /X /E /H /K")
+			sh 'xcopy C:\\PYTHON C:\\Projects /O /X /E /H /K'
         	}
 		}
 	}
