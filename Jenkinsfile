@@ -10,14 +10,8 @@ pipeline
 		 {
             steps 
 			{
-				 sh 'npm --version'
-				// sh label: '', script: 'cd\\'
-				// sh label: '', script: 'cd Projects\\NRCM'
-				// dir('C:\\Projects\\NRCM\\') 
-				// {
-				// 	echo 'hi'
-                // 	sh 'npm run ng build --prod --aot'
-            	// }
+				//  sh 'npm --version'
+				 bat("xcopy C:\\Projects\\NRCM\\guitar.txt C:\\Projects /O /X /E /H /K")
         	}
 		}
 	}
