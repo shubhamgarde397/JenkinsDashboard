@@ -26,7 +26,7 @@ pipeline
 				}
         	}
 		}
-		stage('Copying to Nexus Repo')
+		stage('Uploading to Nexus Repo')
 		{
 			steps{
 			echo 'Copying to nexas repo'
@@ -35,7 +35,14 @@ pipeline
 		stage('Deployment')
 		{
 			steps{
-			echo 'Deployment in process'
+			bat 'xcopy C:\\ISA\\isa\\nextGen\\dist C:\\Deployment /O /X /E /H /K'
+			dir('C:\\ISA\\isa\\nextGen') 
+				{
+					bat 'rmdir /q /s dist-nextGen-old'
+					bat 'ren dist-nextGen dist-nextGen-old'
+					bat 'ren nextGen dist-nextGen'
+				}
+			
 			}
 		}
 	}
