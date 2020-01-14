@@ -9,7 +9,11 @@ pipeline
 		stage('Preparation'){
 
 			steps{
+<<<<<<< HEAD
 				echo 'Files in preparation State'
+=======
+				echo 'Files e in preparation State'
+>>>>>>> 0ab6faa94e488b249ec21a9125fb72cc15f20103
 			}
 		}
 
