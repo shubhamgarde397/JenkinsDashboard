@@ -9,7 +9,7 @@ pipeline
 		stage('Preparation'){
 
 			steps{
-				echo 'Files are in preparation State'
+				echo 'Files ar in preparation State'
 			}
 		}
 
