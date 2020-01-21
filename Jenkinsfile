@@ -10,7 +10,11 @@ pipeline
 
 			steps{
 <<<<<<< HEAD
+<<<<<<< HEAD
 				echo 'Files n preparation State'
+=======
+				echo 'Files in are preparation State'
+>>>>>>> e1d4b9d672d0f29cf894528cdee8c3fbc1110557
 =======
 				echo 'Files e in preparation State'
 >>>>>>> 0ab6faa94e488b249ec21a9125fb72cc15f20103
